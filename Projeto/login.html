@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclua as folhas de estilo do Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Inclua os scripts do Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Login</title>
+
+</head>
+<body>
+    
+    <div class="container center">
+        <div class="row">
+          <div class="col s12 m6 offset-m3">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Faça seu login</span>
+                <form>
+                  <div class="input-field">
+                    <input id="Login" type="text" class="validate" required>
+                    <label for="Login">Login</label>
+                  </div>
+                  <div class="input-field">
+                    <input id="password" type="password" class="validate" required>
+                    <label for="password">Password</label>
+                  </div>
+                  <p><a href="">Cadastre-se</p></a>
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" checked />
+                      <span>Usuário Comum</span>
+                    </label>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>Usuário Master</span>
+                    </label>
+                  </p>
+                  <button class="waves-effect waves-light btn-small" type="submit" name="action">
+                    <i class="material-icons right">Enviar</i>
+                  </button>
+                  <button class="waves-effect waves-light btn-small" type="reset" name="action">
+                    <i class="material-icons right">Limpar</i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          M.AutoInit(); // Inicializa todos os componentes do Materialize
+        });
+      </script>
+</body>
+</html>
